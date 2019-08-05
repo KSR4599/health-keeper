@@ -1,0 +1,13 @@
+'use strict';
+
+//import web3 from './web3';
+//import estoreFactory from './build/DocStore.json';
+
+var web3 = require('./web3');
+var estoreFactory = require('./build/Health.json');
+
+var instance = new web3.eth.Contract(JSON.parse(estoreFactory.interface), '0x4d2b96b2b456da7bff7d7cbe1d791cb983e3ebd6');
+
+//export default instance;
+module.exports = instance;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImV0aGVyZXVtXFxzdG9yZS5qcyJdLCJuYW1lcyI6WyJ3ZWIzIiwicmVxdWlyZSIsImVzdG9yZUZhY3RvcnkiLCJpbnN0YW5jZSIsImV0aCIsIkNvbnRyYWN0IiwiSlNPTiIsInBhcnNlIiwiaW50ZXJmYWNlIiwibW9kdWxlIiwiZXhwb3J0cyJdLCJtYXBwaW5ncyI6Ijs7QUFDQTtBQUNBOztBQUVBLElBQUksT0FBTyxRQUFRLEFBQVIsQUFBWDtBQUNBLElBQUksZ0JBQWdCLFFBQVEsQUFBUixBQUFwQjs7QUFHQSxJQUFNLFdBQVcsSUFBSSxLQUFLLEFBQUwsSUFBUyxBQUFiLFNBQ2YsS0FBSyxBQUFMLE1BQVcsY0FBYyxBQUF6QixBQURlLFlBRWYsQUFGZSxBQUFqQjs7QUFLQTtBQUNBLE9BQU8sQUFBUCxVQUFpQixBQUFqQiIsImZpbGUiOiJzdG9yZS5qcyIsInNvdXJjZVJvb3QiOiJDOi9Vc2Vycy9rc3JlZC9Eb3dubG9hZHMvWnpaL0RvYy1LZWVwZXItbWFzdGVyIn0=
